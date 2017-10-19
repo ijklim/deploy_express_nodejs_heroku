@@ -4,7 +4,7 @@
   <img src="https://github.com/ijklim/deploy_express_nodejs_heroku/blob/master/express-nodejs-heroku.png" width="100%">
 </p>
 
-[Live Demo](https://http://i-express.herokuapp.com)
+[Live Demo](https://i-express.herokuapp.com)
 
 
 ## Getting Started
@@ -21,11 +21,11 @@ These instructions will show you how to create an Express (a Node.js web applica
 
 ### Step 1. Create an Express website
 
-I use the name `myexpress`, you can call it anything you want, except `express`. It cannot be the same name as the Express package.
+I use the name `i-express`, you can call it anything you want, except `express`. It cannot be the same name as the Express package.
 
 ``` bash
-mkdir myexpress
-cd myexpress
+mkdir i-express
+cd i-express
 
 npm init
 ```
@@ -67,13 +67,13 @@ node server
 
 You should be able to bring up a Hello World page by visiting http://localhost:3000.
 
-After successfully testing the site, you can stop the server by using `CTRL+C`.
+After successfully testing the site, you can stop the server by pressing `CTRL+C`.
 
 ### Step 5. Set up Heroku
 
 1. Sign in to https://heroku.com
 2. Select **New** > **Create new app** to create a new app
-3. Enter an App name (e.g. myexpress)
+3. Enter an App name (e.g. in my case `i-express`)
 4. Install the Heroku CLI
 
 ``` bash
@@ -90,7 +90,7 @@ heroku login
 
 ### Step 6. Set up git
 
-Create a `.gitignore` file to prevent node modules from being tracked.
+Create a `.gitignore` file to prevent files in node_modules from being tracked and uploaded to Heroku.
 
 **.gitignore:**
 ```
@@ -101,7 +101,7 @@ Initialize git and deploy to Heroku
 
 ``` bash
 git init
-heroku git:remote -a myexpress
+heroku git:remote -a i-express
 git add .
 git commit -am "Create Hello World page"
 git push heroku master
